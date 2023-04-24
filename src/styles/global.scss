@@ -1,0 +1,25 @@
+.flex_row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page {
+  padding: 1rem;
+  width: 100vw;
+  min-height: 85vh;
+}
+
+.sect {
+  margin-bottom: 1rem;
+  h1 {
+    padding: 1rem;
+  }
+}
