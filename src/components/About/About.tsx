@@ -7,10 +7,7 @@ const About = () => {
       <section className={`sect ${styles.about_text}`}>
         <h1 className={`sect_title`}>About me</h1>
         <p>
-          I am Jimmy, a junior frontend developer. After graduating from Fu jen
-          Catholic University. I continued my studies at Heidelberg University,
-          Germany. I started my developer career from frontend developer at a fin-tech company. 
-          Currently I am also learning express.js and MongoDB and aimint to be a MERN stack developer.
+          I am Jimmy, a junior frontend developer. I had been studied in Taipei, Heidelberg and Kyoto. After completing my master in Germany, I was learning coding by myself. And later on, I started my developer career from frontend developer at a fin-tech company in Taipei. My job was mainly maintaing existing platfrom and developing new featues with react.js. Currently I am also learning express.js and MongoDB and aiming to be a MERN stack developer.
         </p>
       </section>
 

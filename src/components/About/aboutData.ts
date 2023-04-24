@@ -1,14 +1,14 @@
 export const educationData = [
   {
-    title: "Fu Jen Catholic University (Taiwan)",
-    titleInfo: "German Languges & Culture B.A.",
+    title: "Fu Jen Catholic University (Taiwan) -  B.A.",
+    titleInfo: "German Languges & Culture",
   },
   {
-    title: "Heidelberg University (Germany)",
-    titleInfo: "Major: Transcultural Studies/ Minor: Japanoloy M.A.",
+    title: "Heidelberg University (Germany) - M.A.",
+    titleInfo: "Major: Transcultural Studies/ Minor: Japanoloy",
   },
   {
-    title: "Kyoto University (Japan)",
+    title: "Kyoto University (Japan) - Exchange Student",
     titleInfo: "Exchange Student",
   }
 ];
