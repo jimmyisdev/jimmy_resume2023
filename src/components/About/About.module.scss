@@ -1,11 +1,16 @@
-.about_container {
-  padding: 1rem;
+.about_text {
+  p {
+    margin: auto 2.5rem;
+    line-height: 1.5rem;
+  }
 }
 
 .about_item {
-  margin: .5rem;
+  margin: 0.5rem;
   padding: 1rem;
   .title {
     width: 300px;
+    font-weight: 700;
+    border-bottom:1px solid red;
   }
 }

@@ -7,7 +7,7 @@ const Work = () => {
   return (
     <div className={`flex-row page ${styles.work}`}>
       <section className={`sect`}>
-        <h1>Working Experience</h1>
+        <h1 className={`sect_title`}>Working Experience</h1>
         <div className={`${styles.container} side`}>
           {jobInfoData.map((item: any) => {
             return (
@@ -24,22 +24,36 @@ const Work = () => {
                 return (
                   <div
                     key={item.name}
-                    className={`${styles.project_item} ${styles.job_project_item}`}
+                    className={`${styles.project_item} ${styles.job_project_item} ${styles.flip_card}`}
                   >
-                    <div className="flex_row">
-                      <p className={styles.content}>{item.name}</p>
-                    </div>
-                    <div className="flex_row">
-                      <p className={styles.content}> {item.description}</p>
-                    </div>
-                    <div className="flex_row">
-                      <p className={styles.content}>
-                        {item.tools.map((toolItem: any) => {
-                          return (
-                            <span key={item.name + toolItem}>{toolItem}</span>
-                          );
-                        })}
-                      </p>
+                    <div className={`${styles.flip_card_inner} `}>
+                      <div className={`${styles.flip_card_front} flex_column`}>
+                        <div className={`flex_row ${styles.job_project_title}`}>
+                          <h3 className={styles.content}>{item.name}</h3>
+                        </div>
+
+                        <div className="flex_row">
+                          <ul className={`${styles.content} flex_row`}>
+                            {item.tools.map((toolItem: any) => {
+                              return (
+                                <li key={item.name + toolItem} className={`${styles.badge} flex_column`}>
+                                  {toolItem}
+                                </li>
+                              );
+                            })}
+                          </ul>
+                        </div>
+                      </div>
+                      <div className={`${styles.flip_card_back} flex_column`}>
+                        <p className={styles.content}> {item.description}</p>
+                        <p className={`${styles.content} flex_column`}>
+                          {item.tasks.map((taskItem: any) => {
+                            return (
+                              <span key={item.name + taskItem}>{taskItem}</span>
+                            );
+                          })}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 );
@@ -48,8 +62,9 @@ const Work = () => {
           </div>
         </div>
       </section>
+
       <section className={`sect`}>
-        <h1>Side Projects</h1>
+        <h1 className={`sect_title`}>Side Projects</h1>
         <div className={`${styles.container} ${styles.side}`}>
           {projectData.map((item: any) => {
             const { name, url, repos, tools } = item;
@@ -58,24 +73,24 @@ const Work = () => {
                 key={item.name}
                 className={`flex_column ${styles.project_item}`}
               >
-                <div>{item.name}</div>
-                <div className={`flex_row`}>
+                <h3 className={`${styles.title}`}>{item.name}</h3>
+                <ul className={` ${styles.project_item_container} flex_row`}>
                   {item.tools.map((toolItem: any) => {
                     return (
-                      <span
+                      <li
                         key={name + toolItem}
-                        className={`${styles.tool_item}`}
+                        className={`${styles.badge} flex_column`}
                       >
                         {toolItem}
-                      </span>
+                      </li>
                     );
                   })}
-                </div>
-                <div className={`flex_row`}>
+                </ul>
+                <div className={`flex_row ${styles.link_container}`}>
                   <a href={item.url}>
-                    <FaExternalLinkAlt />
+                    <FaExternalLinkAlt size={30}/>
                   </a>
-                  <FaGithub />
+                  <FaGithub size={30}/>
                 </div>
               </div>
             );

@@ -1,24 +1,40 @@
 import styles from "./About.module.scss";
-import { aboutData } from "./aboutData";
+import { educationData, proficiencyData } from "./aboutData";
 
 const About = () => {
   return (
     <div className={`page ${styles.about}`}>
-      <section className={`sect`}>
-        <h1>About me</h1>
-        <p></p>I am Jimmy born and raised in Taipie. After graduating from Fu
-        jen Catholic University. I continued my studies at Heidelberg
-        University, Germany.
+      <section className={`sect ${styles.about_text}`}>
+        <h1 className={`sect_title`}>About me</h1>
+        <p>
+          I am Jimmy, a junior frontend developer. After graduating from Fu jen
+          Catholic University. I continued my studies at Heidelberg University,
+          Germany. I started my developer career from frontend developer at a fin-tech company. 
+          Currently I am also learning express.js and MongoDB and aimint to be a MERN stack developer.
+        </p>
       </section>
 
       <section className={`sect`}>
-        <h1>Education & Proficiency</h1>
+        <h1 className={`sect_title`}>Education </h1>
         <div className={`${styles.about_container} flex_column`}>
-          {aboutData.map((item: any) => {
+          {educationData.map((item: any) => {
             return (
               <div key={item.title} className={`${styles.about_item} flex_row`}>
                 <span className={`${styles.title}`}>{item.title}</span>
-                <span className={`${styles.content}`}>{item.titleInfo}</span>
+                {/* <span className={`${styles.content}`}>{item.titleInfo}</span> */}
+              </div>
+            );
+          })}
+        </div>
+      </section>
+      <section className={`sect`}>
+        <h1 className={`sect_title`}> Proficiency</h1>
+        <div className={`${styles.about_container} flex_column`}>
+          {proficiencyData.map((item: any) => {
+            return (
+              <div key={item.title} className={`${styles.about_item} flex_row`}>
+                <span className={`${styles.title}`}>{item.title}</span>
+                {/* <span className={`${styles.content}`}>{item.titleInfo}</span> */}
               </div>
             );
           })}

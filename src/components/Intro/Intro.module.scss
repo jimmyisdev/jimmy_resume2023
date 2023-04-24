@@ -1,35 +1,28 @@
-.intro {
-  height: 100vh;
-}
-.tool_container {
-  width: 100%;
-  justify-content: center;
-}
-
-.tool_item {
-  width: 120px;
-  border: 2px solid blue;
-  margin: 0.5rem;
-  padding: 0.5rem;
-  border-radius: 1rem;
-}
-
-.main_img{
+.main_img {
   background-color: black;
   width: 150px;
   height: 150px;
   clip-path: circle(50% at 50% 50%);
   margin: 2rem;
-
 }
 
-.feature_container{
-  li{
+.feature_container {
+  li {
     margin-bottom: 1rem;
   }
-
+  h3 {
+    margin-left: 0.5rem;
+  }
 }
 
-.intro_phrase{
-  margin: 2rem;
+.tool_container {
+  justify-content: center;
+}
+.tool_item {
+  width: 120px;
+  border: 1px solid blue;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-weight: 800;
 }

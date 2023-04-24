@@ -18,7 +18,7 @@ const Intro = () => {
         </div>
         <ul className={`flex_column ${styles.feature_container}`}>
           <div className={`flex_column ${styles.intro_phrase}`}>
-            <h1>Hi! This is Jimmy, a web developer!</h1>
+            <h1 className={`sect_title`}>Hi! This is Jimmy, a web developer!</h1>
           </div>
           <li className={`flex_row`}>
             <VscPassFilled />
@@ -26,22 +26,22 @@ const Intro = () => {
           </li>
           <li className={`flex_row`}>
             <VscPassFilled />
+            <h3>Write clean code</h3>
+          </li>
+          <li className={`flex_row`}>
+            <VscPassFilled />
             <h3>Working independently</h3>
           </li>
           <li className={`flex_row`}>
             <VscPassFilled />
-            <h3>Write clean codes</h3>
-          </li>
-          <li className={`flex_row`}>
-            <VscPassFilled />
-            <h3>Willing to learn new tech</h3>
+            <h3>Willing to learn new technologies</h3>
           </li>
         </ul>
       </section>
 
       <section className={`sect`}>
         <div className="flex_column">
-          <h1>I have experience with these stuffs</h1>
+          <h1 className={`sect_title`}>I have experience with these stuffs</h1>
         </div>
         <div className={`${styles.tool_container} flex_row`}>
           {toolsData.map((item: string) => {

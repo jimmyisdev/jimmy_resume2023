@@ -1,4 +1,4 @@
-export const aboutData = [
+export const educationData = [
   {
     title: "Fu Jen Catholic University (Taiwan)",
     titleInfo: "German Languges & Culture B.A.",
@@ -10,22 +10,24 @@ export const aboutData = [
   {
     title: "Kyoto University (Japan)",
     titleInfo: "Exchange Student",
-  },
+  }
+];
+
+export const proficiencyData = [
   {
-    title: "German Proficiency",
+    title: "German",
     titleInfo: "TestDaF 4",
   },
   {
-    title: "English Proficiency",
+    title: "English",
     titleInfo: "IELTS Band 6.5",
   },
   {
-    title: "Mandarin Proficiency",
+    title: "Mandarin",
     titleInfo: "Native Speaker",
   },
   {
-    title: "Japanese Proficiency",
+    title: "Japanese",
     titleInfo: "JLPT N1",
   },
-
 ];
