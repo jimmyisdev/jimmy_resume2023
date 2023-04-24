@@ -1,14 +1,11 @@
 import Image from "next/image";
 import styles from "../Intro/Intro.module.scss";
 import { toolsData } from "./toolData";
-
+import { VscPassFilled } from "react-icons/vsc";
 const Intro = () => {
   return (
     <div className={`page ${styles.intro}`}>
       <section className="flex_column">
-        <div>
-          <h1>Hi! This is Jimmy, a web developer!</h1>
-        </div>
         <div className={`flex_column ${styles.main_img}`}>
           <Image
             className={styles.logo}
@@ -19,6 +16,27 @@ const Intro = () => {
             priority
           />
         </div>
+        <ul className={`flex_column ${styles.feature_container}`}>
+          <div className={`flex_column ${styles.intro_phrase}`}>
+            <h1>Hi! This is Jimmy, a web developer!</h1>
+          </div>
+          <li className={`flex_row`}>
+            <VscPassFilled />
+            <h3>Self-taught</h3>
+          </li>
+          <li className={`flex_row`}>
+            <VscPassFilled />
+            <h3>Working independently</h3>
+          </li>
+          <li className={`flex_row`}>
+            <VscPassFilled />
+            <h3>Write clean codes</h3>
+          </li>
+          <li className={`flex_row`}>
+            <VscPassFilled />
+            <h3>Willing to learn new tech</h3>
+          </li>
+        </ul>
       </section>
 
       <section className={`sect`}>
@@ -34,19 +52,6 @@ const Intro = () => {
             );
           })}
         </div>
-      </section>
-      <section className={`sect`}>
-        <ul className="flex_column">
-          <li>
-            <h3>Self-taught & independent</h3>
-          </li>
-          <li>
-            <h3>Can work & learn in English</h3>
-          </li>
-          <li>
-            <h3>Write clean code with explanatory comments</h3>
-          </li>
-        </ul>
       </section>
     </div>
   );
