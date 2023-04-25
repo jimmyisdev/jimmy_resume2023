@@ -1,4 +1,6 @@
 export const toolsData = [
+  "JavaScript(ES6)",
+  "TypeScript",
   "React.js (Next)",
   "React.js (CRA)",
   "Redux",
@@ -18,6 +20,6 @@ export const toolsData = [
   "Postman",
   "Git",
   "Github",
-  "render",
-  "netlify",
+  "Render",
+  "Netlify",
 ];

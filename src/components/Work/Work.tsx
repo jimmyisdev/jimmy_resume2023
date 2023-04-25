@@ -5,7 +5,7 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const Work = () => {
   return (
-    <div className={`flex-row page ${styles.work}`}>
+    <div className={`page ${styles.work}`}>
       <section className={`sect`}>
         <h1 className={`sect_title`}>Working Experience</h1>
         <div className={`${styles.container} side`}>
@@ -21,22 +21,25 @@ const Work = () => {
             <div className={styles.title}>Projects</div>
             <div className={`${styles.content} flex_row`}>
               {jobProjectData.map((item: any) => {
+                const { name } = item;
                 return (
                   <div
-                    key={item.name}
+                    key={name}
                     className={`${styles.project_item} ${styles.job_project_item} ${styles.flip_card}`}
                   >
                     <div className={`${styles.flip_card_inner} `}>
                       <div className={`${styles.flip_card_front} flex_column`}>
                         <div className={`flex_row ${styles.job_project_title}`}>
-                          <h3 className={styles.content}>{item.name}</h3>
+                          <h3 className={styles.content}>{name}</h3>
                         </div>
-
                         <div className="flex_row">
-                          <ul className={`${styles.content} flex_row`}>
+                          <ul className={`${styles.content} flex_row badge_container`}>
                             {item.tools.map((toolItem: any) => {
                               return (
-                                <li key={item.name + toolItem} className={`${styles.badge} flex_column`}>
+                                <li
+                                  key={item.name + toolItem}
+                                  className={`badge_style flex_column`}
+                                >
                                   {toolItem}
                                 </li>
                               );
@@ -62,7 +65,6 @@ const Work = () => {
           </div>
         </div>
       </section>
-
       <section className={`sect`}>
         <h1 className={`sect_title`}>Side Projects</h1>
         <div className={`${styles.container} ${styles.side}`}>
@@ -79,7 +81,7 @@ const Work = () => {
                     return (
                       <li
                         key={name + toolItem}
-                        className={`${styles.badge} flex_column`}
+                        className={`badge_style flex_column`}
                       >
                         {toolItem}
                       </li>
@@ -88,9 +90,11 @@ const Work = () => {
                 </ul>
                 <div className={`flex_row ${styles.link_container}`}>
                   <a href={item.url}>
-                    <FaExternalLinkAlt size={30}/>
+                    <FaExternalLinkAlt size={30} />
                   </a>
-                  <FaGithub size={30}/>
+                  <a>
+                    <FaGithub size={30} />
+                  </a>
                 </div>
               </div>
             );
