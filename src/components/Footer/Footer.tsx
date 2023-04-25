@@ -7,7 +7,7 @@ export default function Footer() {
       <span className={`flex_row`}>Contact: hire.jimmy.dev@gamil.com</span>
       <span className={`flex_row`}>
         This site is built with &nbsp; <SiNextdotjs size={30} />
-        &nbsp; &&nbsp; <SiSass size={30} />
+        &nbsp; & &nbsp; <SiSass size={30} />
       </span>
     </footer>
   );

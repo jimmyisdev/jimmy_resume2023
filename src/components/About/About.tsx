@@ -29,14 +29,13 @@ const About = () => {
           improve my skills and knowledge.
         </p>
       </section>
-
       <section className={`sect`}>
-        <h1 className={`sect_title`}>Education </h1>
+        <h1 className={`sect_title`}>Education</h1>
         <div className={`${styles.about_container} flex_column`}>
-          {educationData.map((item: any) => {
+          {educationData.map((item: string) => {
             return (
-              <div key={item.title} className={`${styles.about_item} flex_row`}>
-                <span className={`${styles.title}`}>{item.title}</span>
+              <div key={item} className={`${styles.about_item} flex_row`}>
+                <span className={`${styles.title}`}>{item}</span>
               </div>
             );
           })}
@@ -45,10 +44,10 @@ const About = () => {
       <section className={`sect`}>
         <h1 className={`sect_title`}> Proficiency</h1>
         <div className={`${styles.about_container} flex_column`}>
-          {proficiencyData.map((item: any) => {
+          {proficiencyData.map((item: string) => {
             return (
-              <div key={item.title} className={`${styles.about_item} flex_row`}>
-                <span className={`${styles.title}`}>{item.title}</span>
+              <div key={item} className={`${styles.about_item} flex_row`}>
+                <span className={`${styles.title}`}>{item}</span>
               </div>
             );
           })}

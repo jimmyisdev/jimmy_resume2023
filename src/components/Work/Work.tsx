@@ -1,61 +1,52 @@
 import styles from "./Work.module.scss";
-import { jobInfoData, jobProjectData } from "./jobData";
-import { projectData } from "./projectData";
+import { jobInfoData, jobProjectData, projectData } from "./workData";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
-
+import { jobInfoDataType, jobProjectItemType, sideProjectItemType } from "../../interface/interface";
 const Work = () => {
   return (
-    <div className={`page ${styles.work}`}>
+    <div className={`page`}>
       <section className={`sect`}>
         <h1 className={`sect_title`}>Working Experience</h1>
-        <div className={`${styles.container} side`}>
-          {jobInfoData.map((item: any) => {
+        <div className={`${styles.work_sub_container}`}>
+          {jobInfoData.map((item: jobInfoDataType) => {
             return (
-              <div key={item[1]} className={`flex_row ${styles.job_item}`}>
+              <div key={item[1]} className={`flex_row ${styles.job_info_item}`}>
                 <div className={styles.title}>{item[0]}</div>
                 <div className={styles.content}>{item[1]}</div>
               </div>
             );
           })}
-          <div className={`flex_row ${styles.job_item}`}>
+          <div className={`flex_row ${styles.job_info_item}`}>
             <div className={styles.title}>Projects</div>
             <div className={`${styles.content} flex_row`}>
-              {jobProjectData.map((item: any) => {
-                const { name } = item;
+              {jobProjectData.map((item: jobProjectItemType ) => {
+                const { name, description, tools } = item;
                 return (
-                  <div
-                    key={name}
-                    className={`${styles.project_item} ${styles.job_project_item} ${styles.flip_card}`}
-                  >
-                    <div className={`${styles.flip_card_inner} `}>
-                      <div className={`${styles.flip_card_front} flex_column`}>
+                  <div key={name} className={` flip_card`}>
+                    <div className={`${styles.project_item} flip_card_inner`}>
+                      <div
+                        className={`flip_card_front flex_column ${styles.work_item_container_align}`}
+                      >
                         <div className={`flex_row ${styles.job_project_title}`}>
-                          <h3 className={styles.content}>{name}</h3>
+                          <h3>{name}</h3>
                         </div>
                         <div className="flex_row">
-                          <ul className={`${styles.content} flex_row badge_container`}>
-                            {item.tools.map((toolItem: any) => {
+                          <ul className={`flex_row badge_container`}>
+                            {tools.map((toolItem: string) => {
                               return (
                                 <li
-                                  key={item.name + toolItem}
+                                  key={name + toolItem}
                                   className={`badge_style flex_column`}
                                 >
-                                  {toolItem}
+                                  <span>{toolItem}</span>
                                 </li>
                               );
                             })}
                           </ul>
                         </div>
                       </div>
-                      <div className={`${styles.flip_card_back} flex_column`}>
-                        <p className={styles.content}> {item.description}</p>
-                        <p className={`${styles.content} flex_column`}>
-                          {item.tasks.map((taskItem: any) => {
-                            return (
-                              <span key={item.name + taskItem}>{taskItem}</span>
-                            );
-                          })}
-                        </p>
+                      <div className={`flip_card_back flex_column`}>
+                        <p className={styles.content}> {description}</p>
                       </div>
                     </div>
                   </div>
@@ -67,34 +58,41 @@ const Work = () => {
       </section>
       <section className={`sect`}>
         <h1 className={`sect_title`}>Side Projects</h1>
-        <div className={`${styles.container} ${styles.side}`}>
-          {projectData.map((item: any) => {
+        <div className={`${styles.work_sub_container} flex_row`}>
+          {projectData.map((item: sideProjectItemType) => {
             const { name, url, repos, tools } = item;
             return (
               <div
-                key={item.name}
-                className={`flex_column ${styles.project_item}`}
+                key={name}
+                className={`flex_column ${styles.project_item} ${styles.work_item_container_align}`}
               >
-                <h3 className={`${styles.title}`}>{item.name}</h3>
-                <ul className={` ${styles.project_item_container} flex_row`}>
-                  {item.tools.map((toolItem: any) => {
+                <h3 className={`${styles.title}`}>{name}</h3>
+                <ul className={` ${styles.work_item_container_align} flex_row`}>
+                  {tools.map((toolItem: any) => {
                     return (
                       <li
                         key={name + toolItem}
                         className={`badge_style flex_column`}
                       >
-                        {toolItem}
+                        <span>{toolItem}</span>
                       </li>
                     );
                   })}
                 </ul>
                 <div className={`flex_row ${styles.link_container}`}>
-                  <a href={item.url}>
+                  <a href={url}>
                     <FaExternalLinkAlt size={30} />
                   </a>
-                  <a>
-                    <FaGithub size={30} />
-                  </a>
+                  {!!repos.frontend && (
+                    <a href={repos.frontend}>
+                      <FaGithub size={30} />
+                    </a>
+                  )}
+                  {!!repos.backend && (
+                    <a href={repos.backend}>
+                      <FaGithub size={30} />
+                    </a>
+                  )}
                 </div>
               </div>
             );

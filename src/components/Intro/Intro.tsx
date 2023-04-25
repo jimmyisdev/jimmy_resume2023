@@ -1,7 +1,9 @@
 import Image from "next/image";
+
 import styles from "../Intro/Intro.module.scss";
 import { toolsData } from "./toolData";
 import { VscPassFilled } from "react-icons/vsc";
+
 const Intro = () => {
   return (
     <div className={`page ${styles.intro}`}>
@@ -38,20 +40,19 @@ const Intro = () => {
           </li>
         </ul>
       </section>
-
       <section className={`sect`}>
         <div className="flex_column">
           <h1 className={`sect_title`}>I have experience with these stuffs</h1>
         </div>
-        <div className={`${styles.tool_container} flex_row`}>
+        <ul className={`${styles.tool_container} flex_row`}>
           {toolsData.map((item: string) => {
             return (
-              <div key={item} className={`${styles.tool_item} flex_column`}>
+              <li key={item} className={`flex_column badge_style`}>
                 <span>{item}</span>
-              </div>
+              </li>
             );
           })}
-        </div>
+        </ul>
       </section>
     </div>
   );

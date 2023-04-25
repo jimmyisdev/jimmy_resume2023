@@ -5,7 +5,6 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta name="description" content="Jimmy Resume" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/author1.png" />
       </Head>
       <body>
