@@ -1,11 +1,14 @@
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ThemeContext } from "@component/context/context";
-import { Props, ThemeContextType } from "@component/interface/interface";
+import { PropsType, ThemeContextType } from "@component/interface/interface";
 
-export default function Layout({ children }: Props) {
+export default function Layout({ children }: PropsType) {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
+  useEffect(() => {
+    console.log(theme);
+  }, [theme]);
 
   return (
     <div className={theme === "light" ? "light" : "dark"}>

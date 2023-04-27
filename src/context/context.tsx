@@ -1,9 +1,9 @@
-import { Props, Theme, ThemeContextType } from "@component/interface/interface";
+import {PropsType, ThemeContextType, ThemeType } from "@component/interface/interface";
 import { FC, createContext, useState,PropsWithChildren } from "react";
 
 export const ThemeContext = createContext<ThemeContextType | null>(null);
-const ThemeProvider: FC<PropsWithChildren<Props>>  = ({ children }) => {
-  const [themeMode, setThemeMode] = useState<Theme>("light");
+const ThemeProvider: FC<PropsWithChildren<PropsType>>  = ({ children }) => {
+  const [themeMode, setThemeMode] = useState<ThemeType>("light");
   return (
     <ThemeContext.Provider value={{ theme: themeMode, updateTheme: setThemeMode }}>
       {children}
