@@ -1,15 +1,17 @@
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-type Props = {
-  children: string | JSX.Element | JSX.Element[];
-};
+import { useContext } from "react";
+import { ThemeContext } from "@component/context/context";
+import { Props, ThemeContextType } from "@component/interface/interface";
 
 export default function Layout({ children }: Props) {
+  const { theme } = useContext(ThemeContext) as ThemeContextType;
+
   return (
-    <>
-        <Header />
-            <main>{children}</main>
-        <Footer />
-    </>
+    <div className={theme === "light" ? "light" : "dark"}>
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </div>
   );
 }
