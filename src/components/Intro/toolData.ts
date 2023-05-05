@@ -10,8 +10,9 @@ export const toolsData = [
   "Sass",
   "Bootstrap",
   "Materail UI",
-
   "Express.js",
+  "Apollo Server",
+  "GraphQL",
   "MongoDB",
   "Mongoose",
   "JWT",

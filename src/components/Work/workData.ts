@@ -7,32 +7,51 @@ export const jobInfoData = [
 export const jobProjectData = [
   {
     name: "OTC",
-    description: ["A platfrom used for the large amount crypto currency trading."],
+    description: [
+      "A platfrom used for the large amount crypto currency trading.",
+    ],
     tasks: [],
-    tools: ["React.js (CRA)", "Bootstrap", "context-api", "Axios", "Yup", "Typescript"],
+    tools: [
+      "React.js (CRA)",
+      "Bootstrap",
+      "context-api",
+      "Axios",
+      "Yup",
+      "Typescript",
+    ],
   },
   {
     name: "Risk Management",
-    description: ["A dashboard to show the investing risk and financial status for internal use."],
+    description: [
+      "A dashboard to show the investing risk and financial status for internal use.",
+    ],
     tasks: ["Build new system"],
     tools: ["React.js (Next)", "Zustand", "Axios", "Sass"],
   },
   {
     name: "Catch Matrix",
-    description: ["A platfrom for trader to trade different crypto currency and trace the latest price from different exchanges."],
+    description: [
+      "A platfrom for trader to trade different crypto currency and trace the latest price from different exchanges.",
+    ],
     tasks: ["Build new"],
     tools: ["React.js (CRA)", "Redux", "Axios", "Yup", "Material UI"],
   },
   {
     name: "Catch Markets",
     description: [
-      "A platfrom used to trade precious metal for both trader and supplier"
+      "A platfrom used to trade precious metal for both trader and supplier",
     ],
     tasks: [""],
-    tools: ["React.js (CRA)", "Bootstrap", "context-api", "Axios", "Yup", "Typescript"],
+    tools: [
+      "React.js (CRA)",
+      "Bootstrap",
+      "context-api",
+      "Axios",
+      "Yup",
+      "Typescript",
+    ],
   },
 ];
-
 
 export const projectData = [
   {
@@ -42,7 +61,36 @@ export const projectData = [
       frontend: "https://github.com/jimmyisdev/Dailygram-frontend",
       backend: "https://github.com/jimmyisdev/Dailygram-backend",
     },
-    tools: ["React.js (CRA)", "Redux", "Express.js", "MongoDB", "Mongoose", "JWT", "MaterialUI", "Render"],
+    tools: [
+      "React.js (CRA)",
+      "Redux",
+      "Express.js",
+      'Rest API',
+      'Axios',
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "MaterialUI",
+      "Render",
+    ],
+  },
+  {
+    name: "Dailygram Admin",
+    url: "https://dailygram-admin2023.onrender.com/",
+    repos: {
+      frontend: "https://github.com/jimmyisdev/Dailygram-GraphQL-frontend",
+      backend: "https://github.com/jimmyisdev/Dailygram-GraphQL-backend",
+    },
+    tools: [
+      "React.js (CRA)",
+      "Express.js",
+      "Apollo server",
+      "GraphQL",
+      "MongoDB",
+      "Mongoose",
+      "Bootstrap",
+      "Render",
+    ],
   },
   {
     name: "sake-sake",

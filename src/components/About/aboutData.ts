@@ -10,3 +10,4 @@ export const proficiencyData = [
   "English - IELTS Band 6.5",
   "Mandarin - Native Speaker",
 ];
+
