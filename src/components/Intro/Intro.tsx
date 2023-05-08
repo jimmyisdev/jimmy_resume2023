@@ -1,8 +1,7 @@
 import Image from "next/image";
-
 import styles from "../Intro/Intro.module.scss";
-import { toolsData } from "./toolData";
 import { VscPassFilled } from "react-icons/vsc";
+import { featuresData, toolsData } from "./toolData";
 
 const Intro = () => {
   return (
@@ -20,24 +19,16 @@ const Intro = () => {
         </div>
         <ul className={`flex_column ${styles.feature_container}`}>
           <div className={`flex_column ${styles.intro_phrase}`}>
-            <h1 className={`sect_title`}>Hi! This is Jimmy, a web developer!</h1>
+            <h1 className={`sect_title`}>
+              Hi! This is Jimmy, a web developer!
+            </h1>
           </div>
-          <li className={`flex_row`}>
-            <VscPassFilled />
-            <h3>Self-taught</h3>
-          </li>
-          <li className={`flex_row`}>
-            <VscPassFilled />
-            <h3>Write clean code</h3>
-          </li>
-          <li className={`flex_row`}>
-            <VscPassFilled />
-            <h3>Working independently</h3>
-          </li>
-          <li className={`flex_row`}>
-            <VscPassFilled />
-            <h3>Willing to learn new technologies</h3>
-          </li>
+          {featuresData.map((item: string) => (
+            <li className={`flex_row`} key={item}>
+              <VscPassFilled />
+              <h3>{item}</h3>
+            </li>
+          ))}
         </ul>
       </section>
       <section className={`sect`}>
