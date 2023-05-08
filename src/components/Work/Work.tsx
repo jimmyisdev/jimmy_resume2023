@@ -1,7 +1,11 @@
 import styles from "./Work.module.scss";
 import { jobInfoData, jobProjectData, projectData } from "./workData";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
-import { jobInfoDataType, jobProjectItemType, sideProjectItemType } from "../../interface/interface";
+import {
+  jobInfoDataType,
+  jobProjectItemType,
+  sideProjectItemType,
+} from "../../interface/interface";
 const Work = () => {
   return (
     <div className={`page`}>
@@ -19,7 +23,7 @@ const Work = () => {
           <div className={`flex_row ${styles.job_info_item}`}>
             <div className={styles.title}>Projects</div>
             <div className={`${styles.content} flex_row`}>
-              {jobProjectData.map((item: jobProjectItemType ) => {
+              {jobProjectData.map((item: jobProjectItemType) => {
                 const { name, description, tools } = item;
                 return (
                   <div key={name} className={` flip_card`}>
@@ -68,7 +72,7 @@ const Work = () => {
               >
                 <h3 className={`${styles.title}`}>{name}</h3>
                 <ul className={` ${styles.work_item_container_align} flex_row`}>
-                  {tools.map((toolItem: any) => {
+                  {tools.map((toolItem: string) => {
                     return (
                       <li
                         key={name + toolItem}

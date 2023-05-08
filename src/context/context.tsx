@@ -1,5 +1,5 @@
-import {PropsType, ThemeContextType, ThemeType } from "@component/interface/interface";
 import { FC, createContext, useState,PropsWithChildren } from "react";
+import {PropsType, ThemeContextType, ThemeType } from "@component/interface/interface";
 
 export const ThemeContext = createContext<ThemeContextType | null>(null);
 const ThemeProvider: FC<PropsWithChildren<PropsType>>  = ({ children }) => {
