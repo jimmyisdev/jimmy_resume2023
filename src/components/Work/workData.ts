@@ -8,7 +8,7 @@ export const jobProjectData = [
   {
     name: "OTC",
     description: [
-      "A platfrom used for the large amount crypto currency trading.",
+      "A platform utilized for facilitating a significant volume of cryptocurrency trading.",
     ],
     tasks: [],
     tools: [
@@ -23,7 +23,7 @@ export const jobProjectData = [
   {
     name: "Risk Management",
     description: [
-      "A dashboard to show the investing risk and financial status for internal use.",
+      "A dashboard designed for internal use, displaying investment risks and financial status.",
     ],
     tasks: ["Build new system"],
     tools: ["React.js (Next)", "Zustand", "Axios", "Sass"],
@@ -31,7 +31,7 @@ export const jobProjectData = [
   {
     name: "Catch Matrix",
     description: [
-      "A platfrom for trader to trade different crypto currency and trace the latest price from different exchanges.",
+      "A trading platform for traders to engage in various cryptocurrency transactions and monitor the latest prices across multiple exchanges.",
     ],
     tasks: ["Build new"],
     tools: ["React.js (CRA)", "Redux", "Axios", "Yup", "Material UI"],
@@ -39,7 +39,7 @@ export const jobProjectData = [
   {
     name: "Catch Markets",
     description: [
-      "A platfrom used to trade precious metal for both trader and supplier",
+      "A platform utilized for trading precious metals, catering to both traders and suppliers.",
     ],
     tasks: [""],
     tools: [
