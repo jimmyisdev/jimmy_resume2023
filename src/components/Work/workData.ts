@@ -66,7 +66,7 @@ export const projectData = [
       "TypeScript",
       "Mongoose",
       "bcrypt",
-      'JWT(jsonwebtoken)',
+      'JWT',
       'Tailwind',
       "Redux-RTK, ApiSice",
       "Vercel",
