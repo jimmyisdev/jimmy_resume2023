@@ -55,6 +55,37 @@ export const jobProjectData = [
 
 export const projectData = [
   {
+    name: "Memodown",
+    url: "https://memodown.vercel.app/",
+    repos: {
+      frontend: "https://github.com/jimmyisdev/memodown",
+      backend: "https://github.com/jimmyisdev/memodown",
+    },
+    tools: [
+      "Next13 (TypeScript)",
+      "Mongoose",
+      "bcrypt",
+      'JWT(jsonwebtoken)',
+      'Tailwind',
+      "Redux(RTK, API slice)",
+      "Vercel",
+    ],
+  },
+  {
+    name: "https://sake-sake2023.vercel.app/",
+    url: "https://sake-sake2023.vercel.app/",
+    repos: {
+      frontend: "https://github.com/jimmyisdev/sake-sake2023",
+    },
+    tools: [
+      "TypeScript",
+      "React (Next.js)",
+      "Redux",
+      'Cocktail Api',
+      "Scss",
+    ],
+  },
+  {
     name: "Dailygram",
     url: "https://dailygram2023.onrender.com/",
     repos: {
