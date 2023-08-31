@@ -16,7 +16,7 @@ export default function ProjextItem({ data, type }: { type: string, data: projec
                     <>
                         {!!tasks.length &&
                             <>
-                                <strong >
+                                <strong>
                                     Project tasks :
                                 </strong>
                                 <ListContainer data={tasks} />
@@ -27,7 +27,7 @@ export default function ProjextItem({ data, type }: { type: string, data: projec
                         {!!description.length &&
                             <>
                                 <strong >
-                                    Project decsciption :
+                                    Project description :
                                 </strong>
                                 <ListContainer data={description} />
                                 <br />
