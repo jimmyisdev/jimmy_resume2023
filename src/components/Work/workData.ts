@@ -85,61 +85,15 @@ export const workInfoData = [
   }
 ]
 
-
-// export const jobProjectData = [
-//   {
-//     name: "OTC",
-//     description: [
-//       "A platform utilized for facilitating a significant volume of cryptocurrency trading.",
-//     ],
-//     tasks: [],
-//     tools: [
-//       "React.js (CRA)",
-//       "Bootstrap",
-//       "context - api",
-//       "Axios",
-//       "Yup",
-//       "Typescript",
-//     ],
-//   },
-//   {
-//     name: "Risk Management",
-//     description: [
-//       "A dashboard designed for internal use, displaying investment risks and financial status.",
-//     ],
-//     tasks: ["Build new system"],
-//     tools: ["React.js (Next)", "Zustand", "Axios", "Sass"],
-//   },
-//   {
-//     name: "Catch Matrix",
-//     description: [
-//       "A trading platform for traders to engage in various cryptocurrency transactions and monitor the latest prices across multiple exchanges.",
-//     ],
-//     tasks: ["Build new"],
-//     tools: ["React.js (CRA)", "Redux", "Axios", "Yup", "Material UI"],
-//   },
-//   {
-//     name: "Catch Markets",
-//     description: [
-//       "A platform utilized for trading precious metals, catering to both traders and suppliers.",
-//     ],
-//     tasks: [""],
-//     tools: [
-//       "React.js (CRA)",
-//       "Bootstrap",
-//       "Context Api",
-//       "Axios",
-//       "Yup",
-//       "Typescript",
-//     ],
-//   },
-// ];
-
 export const projectData = [
   {
-    name: "Memodown",
+    name: "Memodown (Full stack)",
     url: "https://memodown.vercel.app/",
     description: [
+      '- An app which can add note or idea and share with your friend conveniently.',
+      "- Authorization : signup, login/ logout, change password",
+      "- Rest API : CRUD maniupulation with MongoDB",
+      "- Send Message to friend by his/her email"
     ],
     repos: {
       frontend: "https://github.com/jimmyisdev/memodown",
@@ -152,7 +106,7 @@ export const projectData = [
       "bcrypt",
       'JWT',
       'Tailwind',
-      "Redux - RTK / ApiSice",
+      "Redux (RTK / ApiSice)",
       "Vercel",
     ],
     tasks: [],
@@ -162,6 +116,8 @@ export const projectData = [
     name: "Sake Sake 2023",
     url: "https://sake-sake2023.vercel.app/",
     description: [
+      "- Search desired drink based on Cocktail Api",
+      "- Make order and calculate the bill."
     ],
     repos: {
       frontend: "https://github.com/jimmyisdev/sake-sake2023",
@@ -174,12 +130,18 @@ export const projectData = [
       "Scss",
     ],
     tasks: [],
-
   },
   {
-    name: "Dailygram",
+    name: "Dailygram (Full stack)",
     url: "https://dailygram2023.onrender.com/",
     description: [
+      '- Authentication/ Authorization : signin/ login, JWT token, Encrypt password before storing in mongoDB',
+      '- Fetch 3rd party API : get cat picture',
+      '- Text format tool : reformat the text from horizontally to vertically',
+      '- Data display : conditionally filter, ascending/ descending order',
+      '- WebSocket : Show crypto currency price by symbol based on Binance data',
+      '- Rest API  : connect MongoDB to execute CRUD function based on RestAPI',
+      "- MVC structure : Modal(MongoDB data structure), View(React.js Frontend), Controller(Express.js)"
     ],
     repos: {
       frontend: "https://github.com/jimmyisdev/Dailygram-frontend",
