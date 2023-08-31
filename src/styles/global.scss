@@ -24,15 +24,18 @@
 .sect_title {
   margin: 2rem;
 }
+
 .badge_container {
   justify-content: center;
   margin: 0.5rem;
+
+
 }
 
 .badge_style {
-  width: 120px;
-  padding: 0.25rem;
-  margin: 0.15rem;
+  width: 160px;
+  padding: 1rem;
+  margin: 0.35rem;
   border-radius: 2rem;
   border: 1px solid gray;
   font-weight: 600;
@@ -41,13 +44,16 @@
 .dark {
   color: white;
   background-color: black;
+
   ul li a {
     color: white;
   }
 }
+
 .light {
   color: black;
   background-color: white;
+
   ul li a {
     color: black;
   }
@@ -83,4 +89,52 @@
 
 .flip_card_back {
   transform: rotateY(180deg);
+}
+
+.big_container {
+  padding: 1rem;
+
+}
+
+.project_item {
+  width: 280px;
+  margin: 1rem;
+  padding: .5rem;
+
+  .head {
+    h1 {
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: .5rem;
+      padding-bottom: .5rem;
+      border-bottom: 1px solid gray;
+    }
+  }
+
+
+}
+
+.link_item_style {
+  justify-content: space-around;
+  margin-bottom: .5rem;
+
+}
+
+.tool_container_item_style {
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
+
+  .tool_item {
+    margin: .25rem;
+    font-weight: 500;
+    padding: .5rem;
+
+    &:hover {
+      border-bottom: 3px solid red;
+      font-weight: 800;
+    }
+  }
 }

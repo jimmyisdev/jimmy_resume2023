@@ -1,43 +1,52 @@
-.work_sub_container{
+.work_sub_container {
   margin: auto 2rem;
   justify-content: center;
 }
 
 .job_info_item {
   width: 100%;
+
   .title {
     width: 7rem;
     padding: 0.5rem;
     font-weight: 700;
   }
+
   .content {
     padding: 0.5rem;
     justify-content: center;
   }
-  .job_project_title{
+
+  .job_project_title {
     font-weight: 700;
   }
 }
 
-.project_item {
-  width: 280px;
-  height: 280px;
-  border: 1px solid gray;
-  padding: .15rem;
-  margin: 0.5rem;
-  border-radius: 1rem;
-  .title{
-    font-weight: 700;
-  }
-  .project_item_container{
-   justify-content: center;
-  }
-  .link_container{
-    width: 100%;
-    justify-content: space-around;
-  }
-}
-
-.work_item_container_align{
+.work_item_container_align {
   justify-content: space-around;
+}
+
+.content_container {
+  padding: .5rem;
+  width: 100%;
+  line-height: 1.5rem;
+
+  .title {
+    width: 6.5rem;
+    font-weight: 700;
+    padding: .5rem;
+    font-size: 1.2rem;
+  }
+
+  .content {
+    flex-wrap: wrap;
+    padding: .5rem;
+    font-size: 1.2rem;
+
+    ul {
+      li {
+        margin-bottom: .5rem;
+      }
+    }
+  }
 }

@@ -1,62 +1,146 @@
-export const jobInfoData = [
-  ["Period", "November 2021 - March 2023"],
-  ["Company", "Inbase Partners Taiwan Limited"],
-  ["Title", "Junior Frontend Developer"],
-];
+export const workInfoHead = ['period', "company", "title", "task", "projects"]
 
-export const jobProjectData = [
+export const workInfoData = [
   {
-    name: "OTC",
-    description: [
-      "A platform utilized for facilitating a significant volume of cryptocurrency trading.",
+    period: "November 2021 - March 2023",
+    company: "Inbase Partners Taiwan Limited",
+    title: "Frontend Developer",
+    tasks: [
+      'Debugging : Identify and resolve issues in the existing projects',
+      'UI/UX Improvement : Collaborate with designer and PM to enhance the visual appeal and usability of our projects, ensuring an exceptional user experience.',
+      'Legacy Code Refactoring : Analyze and refactor existing code to improve maintainability, readability, and scalability.',
+      "New Feature Development: Take part in the creation and implementatio of new features.",
+      "Rebuilding an Internal System : Utilize mock data to rebuild an existing internal system."
     ],
-    tasks: [],
-    tools: [
-      "React.js (CRA)",
-      "Bootstrap",
-      "context-api",
-      "Axios",
-      "Yup",
-      "Typescript",
-    ],
-  },
-  {
-    name: "Risk Management",
-    description: [
-      "A dashboard designed for internal use, displaying investment risks and financial status.",
-    ],
-    tasks: ["Build new system"],
-    tools: ["React.js (Next)", "Zustand", "Axios", "Sass"],
-  },
-  {
-    name: "Catch Matrix",
-    description: [
-      "A trading platform for traders to engage in various cryptocurrency transactions and monitor the latest prices across multiple exchanges.",
-    ],
-    tasks: ["Build new"],
-    tools: ["React.js (CRA)", "Redux", "Axios", "Yup", "Material UI"],
-  },
-  {
-    name: "Catch Markets",
-    description: [
-      "A platform utilized for trading precious metals, catering to both traders and suppliers.",
-    ],
-    tasks: [""],
-    tools: [
-      "React.js (CRA)",
-      "Bootstrap",
-      "context-api",
-      "Axios",
-      "Yup",
-      "Typescript",
-    ],
-  },
-];
+    projects: [
+      {
+        name: "OTC",
+        description: [
+          "A platform utilized for facilitating a significant volume of cryptocurrency trading.",
+        ],
+        url: "",
+        tasks: [],
+        tools: [
+          "React.js (CRA)",
+          "Bootstrap",
+          "context - api",
+          "Axios",
+          "Yup",
+          "Typescript",
+        ],
+        repos: {
+          frontend: "",
+          backend: "",
+        },
+      },
+      {
+        name: "Risk Management",
+        description: [
+          "A dashboard designed for internal use, displaying investment risks and financial status.",
+        ],
+        tasks: [],
+        url: "",
+        tools: ["React.js (Next)", "Zustand", "Axios", "Sass"],
+        repos: {
+          frontend: "",
+          backend: "",
+        },
+      },
+      {
+        name: "Catch Matrix",
+        description: [
+          "A trading platform for traders to engage in various cryptocurrency transactions and monitor the latest prices across multiple exchanges.",
+        ],
+        tasks: [],
+        url: "",
+        tools: ["React.js (CRA)", "Redux", "Axios", "Yup", "Material UI"],
+        repos: {
+          frontend: "",
+          backend: "",
+        },
+      },
+      {
+        name: "Catch Markets",
+        description: [
+          "A platform utilized for trading precious metals, catering to both traders and suppliers.",
+        ],
+        tasks: [],
+        url: "",
+        tools: [
+          "React.js (CRA)",
+          "Bootstrap",
+          "Context Api",
+          "Axios",
+          "Yup",
+          "Typescript",
+        ],
+        repos: {
+          frontend: "",
+          backend: "",
+        },
+      },
+
+    ]
+
+  }
+]
+
+
+// export const jobProjectData = [
+//   {
+//     name: "OTC",
+//     description: [
+//       "A platform utilized for facilitating a significant volume of cryptocurrency trading.",
+//     ],
+//     tasks: [],
+//     tools: [
+//       "React.js (CRA)",
+//       "Bootstrap",
+//       "context - api",
+//       "Axios",
+//       "Yup",
+//       "Typescript",
+//     ],
+//   },
+//   {
+//     name: "Risk Management",
+//     description: [
+//       "A dashboard designed for internal use, displaying investment risks and financial status.",
+//     ],
+//     tasks: ["Build new system"],
+//     tools: ["React.js (Next)", "Zustand", "Axios", "Sass"],
+//   },
+//   {
+//     name: "Catch Matrix",
+//     description: [
+//       "A trading platform for traders to engage in various cryptocurrency transactions and monitor the latest prices across multiple exchanges.",
+//     ],
+//     tasks: ["Build new"],
+//     tools: ["React.js (CRA)", "Redux", "Axios", "Yup", "Material UI"],
+//   },
+//   {
+//     name: "Catch Markets",
+//     description: [
+//       "A platform utilized for trading precious metals, catering to both traders and suppliers.",
+//     ],
+//     tasks: [""],
+//     tools: [
+//       "React.js (CRA)",
+//       "Bootstrap",
+//       "Context Api",
+//       "Axios",
+//       "Yup",
+//       "Typescript",
+//     ],
+//   },
+// ];
 
 export const projectData = [
   {
     name: "Memodown",
     url: "https://memodown.vercel.app/",
+    description: [
+    ],
     repos: {
       frontend: "https://github.com/jimmyisdev/memodown",
       backend: "https://github.com/jimmyisdev/memodown",
@@ -68,13 +152,17 @@ export const projectData = [
       "bcrypt",
       'JWT',
       'Tailwind',
-      "Redux-RTK, ApiSice",
+      "Redux - RTK / ApiSice",
       "Vercel",
     ],
+    tasks: [],
+
   },
   {
     name: "Sake Sake 2023",
     url: "https://sake-sake2023.vercel.app/",
+    description: [
+    ],
     repos: {
       frontend: "https://github.com/jimmyisdev/sake-sake2023",
     },
@@ -85,10 +173,14 @@ export const projectData = [
       'Cocktail Api',
       "Scss",
     ],
+    tasks: [],
+
   },
   {
     name: "Dailygram",
     url: "https://dailygram2023.onrender.com/",
+    description: [
+    ],
     repos: {
       frontend: "https://github.com/jimmyisdev/Dailygram-frontend",
       backend: "https://github.com/jimmyisdev/Dailygram-backend",
@@ -105,10 +197,14 @@ export const projectData = [
       "MaterialUI",
       "Render",
     ],
+    tasks: [],
+
   },
   {
     name: "Dailygram Admin",
     url: "https://dailygram-admin2023.onrender.com/",
+    description: [
+    ],
     repos: {
       frontend: "https://github.com/jimmyisdev/Dailygram-GraphQL-frontend",
       backend: "https://github.com/jimmyisdev/Dailygram-GraphQL-backend",
@@ -123,13 +219,19 @@ export const projectData = [
       "Bootstrap",
       "Render",
     ],
+    tasks: [],
+
   },
   {
     name: "sake-sake",
     url: "https://2021project-sakesake-react.netlify.app/",
+    description: [
+    ],
     repos: {
       frontend: "https://github.com/jimmyisdev/sake-sake",
     },
     tools: ["React.js (CRA)", "Redux", "Sass", "Netlify"],
+    tasks: [],
+
   },
 ];

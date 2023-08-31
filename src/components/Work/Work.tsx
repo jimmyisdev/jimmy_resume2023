@@ -1,17 +1,74 @@
 import styles from "./Work.module.scss";
-import { jobInfoData, jobProjectData, projectData } from "./workData";
-import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { workInfoData, projectData } from "./workData";
 import {
-  jobInfoDataType,
-  jobProjectItemType,
-  sideProjectItemType,
+  workItemType
 } from "../../interface/interface";
+import ProjextItem from "./ProjextItem";
 const Work = () => {
   return (
     <div className={`page`}>
       <section className={`sect`}>
         <h1 className={`sect_title`}>Working Experience</h1>
-        <div className={`${styles.work_sub_container}`}>
+        <div className="big_container flex_row">
+          {!!workInfoData.length && workInfoData.map((item: workItemType) => {
+            const { period = '', company = '', title = '', tasks = [], projects = [] } = item
+            return <div key={item.company} className={`flex_column ${styles.work_item_container}`}>
+              {<div className={`flex_row ${styles.content_container}`}>
+                <div className={`${styles.title}`}><span>{`Period`}</span></div>
+                <div className={`${styles.content}`}><span>{period}</span></div>
+              </div>}
+              {<div className={`flex_row ${styles.content_container}`}>
+                <div className={`${styles.title}`}><span>{`Company`}</span></div>
+                <div className={`${styles.content}`}><span>{company}</span></div>
+              </div>}
+              {<div className={`flex_row ${styles.content_container}`}>
+                <div className={`${styles.title}`}><span >{`Title`}</span></div>
+                <div className={`${styles.content}`}><span >{title}</span></div>
+              </div>}
+              {<div className={`flex_row ${styles.content_container}`}>
+                <div className={`${styles.title}`}><span>{`Tasks`}</span></div>
+                <div className={`${styles.content} flex_row`}>
+                  <ul>
+                    {!!tasks.length && tasks.map((taskItem: string) => {
+                      return <li key={taskItem}><span>{taskItem}</span></li>
+                    })}
+                  </ul>
+                </div>
+              </div>}
+              {<div className={`${styles.content_container}`}>
+                <div className={`${styles.title}`}><span>{`Projects`}</span></div>
+                <div className={`${styles.content}`}>
+                  <div className="big_container flex_row">
+                    {!!projects.length && projects.map((projectItem) => {
+                      return (
+                        <ProjextItem data={projectItem} key={projectItem.name} type="side" />
+                      )
+                    })}
+                  </div>
+                </div>
+              </div>}
+            </div>
+          })}
+        </div>
+      </section>
+      <section className={`sect`}>
+        <h1 className={`sect_title`}>Side Projects</h1>
+        <div className="big_container flex_row">
+          {!!projectData.length && projectData.map(item => {
+            return (
+              <ProjextItem data={item} key={item.name} type="side" />
+            )
+          })}
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Work;
+
+
+{/* <div className={`${styles.work_sub_container}`}>
           {jobInfoData.map((item: jobInfoDataType) => {
             return (
               <div key={item[1]} className={`flex_row ${styles.job_info_item}`}>
@@ -58,53 +115,4 @@ const Work = () => {
               })}
             </div>
           </div>
-        </div>
-      </section>
-      <section className={`sect`}>
-        <h1 className={`sect_title`}>Side Projects</h1>
-        <div className={`${styles.work_sub_container} flex_row`}>
-          {projectData.map((item: sideProjectItemType) => {
-            const { name, url, repos, tools } = item;
-            return (
-              <div
-                key={name}
-                className={`flex_column ${styles.project_item} ${styles.work_item_container_align}`}
-              >
-                <h3 className={`${styles.title}`}>{name}</h3>
-                <ul className={` ${styles.work_item_container_align} flex_row`}>
-                  {tools.map((toolItem: string) => {
-                    return (
-                      <li
-                        key={name + toolItem}
-                        className={`badge_style flex_column`}
-                      >
-                        <span>{toolItem}</span>
-                      </li>
-                    );
-                  })}
-                </ul>
-                <div className={`flex_row ${styles.link_container}`}>
-                  <a href={url}>
-                    <FaExternalLinkAlt size={30} />
-                  </a>
-                  {!!repos.frontend && (
-                    <a href={repos.frontend}>
-                      <FaGithub size={30} />
-                    </a>
-                  )}
-                  {!!repos.backend && (
-                    <a href={repos.backend}>
-                      <FaGithub size={30} />
-                    </a>
-                  )}
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </section>
-    </div>
-  );
-};
-
-export default Work;
+        </div> */}

@@ -1,19 +1,24 @@
-export type jobInfoDataType = string[];
-export type jobProjectItemType = {
+export type reposType = {
+  frontend?: string;
+  backend?: string;
+}
+
+export type projectItemType = {
   name: string;
   description: string[];
+  tools: string[];
   tasks: string[];
-  tools: string[];
-};
-export type sideProjectItemType = {
-  name: string;
   url: string;
-  repos: {
-    frontend?: string;
-    backend?: string;
-  };
-  tools: string[];
-};
+  repos: reposType;
+}
+
+export type workItemType = {
+  period: string,
+  company: string,
+  title: string,
+  tasks: string[],
+  projects: projectItemType[]
+}
 
 export type PropsType = {
   children: string | JSX.Element | JSX.Element[];
