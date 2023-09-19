@@ -29,7 +29,7 @@ export default function Header() {
         </li>
         <li>
           <Link href="/work" className={pathname == "/work" ? `${styles.linkActive}` : ""}>
-            Work & Projects
+            Work
           </Link>
         </li>
       </ul>

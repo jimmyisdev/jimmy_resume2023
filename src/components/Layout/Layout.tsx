@@ -12,7 +12,7 @@ export default function Layout({ children }: PropsType) {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   const { showModal } = useContext(ModalContext) as any;
   return (
-    <div className={showModal && `${styles.modal_open}`}>
+    <div className={showModal ? `${styles.modal_open}` : ''}>
       {showModal && <Modal />}
       <div className={`${styles.layout} ${theme === "light" ? "light" : "dark"}`}>
         <Header />
