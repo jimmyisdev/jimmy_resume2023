@@ -30,3 +30,12 @@ export type ThemeContextType = {
   theme: ThemeType;
   updateTheme: (theme: ThemeType) => void;
 };
+
+export type ModalContextType = {
+  showModal: boolean;
+  modalType: string;
+  modalData: projectItemType | void;
+  setShowModal: (showModal: boolean) => void;
+  setModalType: (modalType: string) => void;
+  setModalData: (modalData: projectItemType) => void;
+};

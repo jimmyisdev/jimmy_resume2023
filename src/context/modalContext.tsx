@@ -1,11 +1,11 @@
 import { FC, createContext, useState, PropsWithChildren } from "react";
-import { PropsType } from "@component/interface/interface";
+import { ModalContextType, PropsType, projectItemType } from "@component/interface/interface";
 
-export const ModalContext = createContext<any | null>(null);
+export const ModalContext = createContext<ModalContextType | null>(null);
 const ModalProvider: FC<PropsWithChildren<PropsType>> = ({ children }) => {
     const [showModal, setShowModal] = useState(false);
-    const [modalData, setModalData] = useState({});
-    const [modalType, setModalType] = useState("");
+    const [modalData, setModalData] = useState<projectItemType>();
+    const [modalType, setModalType] = useState('');
     return (
         <ModalContext.Provider value={{ showModal, setShowModal, modalData, setModalData, modalType, setModalType }}>
             {children}

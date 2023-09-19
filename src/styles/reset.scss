@@ -27,7 +27,7 @@ html {
   height: -webkit-fill-available;
   font-family: 'Open Sans',
     sans-serif;
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 1.15;
   scroll-behavior: smooth;
   color: var(--font-color);
@@ -191,4 +191,3 @@ input:-webkit-autofill {
 button {
   background-color: transparent;
 }
-

@@ -166,6 +166,7 @@ export const projectData = [
     name: "Dailygram Admin",
     url: "https://dailygram-admin2023.onrender.com/",
     description: [
+      '- An admin dashboard to control Dailygram APP'
     ],
     repos: {
       frontend: "https://github.com/jimmyisdev/Dailygram-GraphQL-frontend",
@@ -188,6 +189,7 @@ export const projectData = [
     name: "sake-sake",
     url: "https://2021project-sakesake-react.netlify.app/",
     description: [
+      '-This is a basic bar order system App'
     ],
     repos: {
       frontend: "https://github.com/jimmyisdev/sake-sake",

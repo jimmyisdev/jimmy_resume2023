@@ -1,8 +1,9 @@
+import { projectItemType, workItemType } from "@component/interface/interface"
 import { LinkItem } from "./LinkItem"
 import { ListContainer } from "./ListContainer"
 import { ToolContainer } from "./ToolContainer"
 
-export const ProjectModalContent = ({ data }: { data: any }) => {
+export const ProjectModalContent = ({ data }: { data: projectItemType }) => {
     const { name, tools, url, description, tasks } = data
 
     return (
