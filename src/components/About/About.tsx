@@ -42,7 +42,7 @@ const About = () => {
         </div>
       </section>
       <section className={`sect`}>
-        <h1 className={`sect_title`}> Proficiency</h1>
+        <h1 className={`sect_title`}>Language Proficiency</h1>
         <div className={`${styles.about_container} flex_column`}>
           {proficiencyData.map((item: string) => {
             return (

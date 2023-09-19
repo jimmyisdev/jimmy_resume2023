@@ -1,36 +1,8 @@
-.work_sub_container {
-  margin: auto 2rem;
-  justify-content: center;
-}
-
-.job_info_item {
-  width: 100%;
-
-  .title {
-    width: 7rem;
-    padding: 0.5rem;
-    font-weight: 700;
-  }
-
-  .content {
-    padding: 0.5rem;
-    justify-content: center;
-  }
-
-  .job_project_title {
-    font-weight: 700;
-  }
-}
-
-.work_item_container_align {
-  justify-content: space-around;
-}
-
 .content_container {
   padding: .5rem;
   width: 100%;
-  line-height: 1.5rem;
-
+  line-height: 2rem;
+  font-size: 1.2rem;
 
   .title {
     width: 6.5rem;

@@ -1,11 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useContext } from "react";
+import { usePathname } from "next/navigation";
 import styles from "./Header.module.scss";
-import { ThemeContext } from "@component/context/context";
+import { ThemeContext } from "@component/context/themeContext";
 import { ThemeType, ThemeContextType } from "@component/interface/interface";
 
+
 export default function Header() {
+  const pathname = usePathname();
   const { updateTheme } = useContext(ThemeContext) as ThemeContextType;
   const handleThemeChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     updateTheme(event.target.value as ThemeType);
@@ -15,13 +18,19 @@ export default function Header() {
     <nav className={`${styles.nav} flex_row`}>
       <ul className="flex_row">
         <li>
-          <Link href="/">Intro</Link>
+          <Link href="/" className={pathname == "/" ? `${styles.linkActive}` : ""}>
+            Intro
+          </Link>
         </li>
         <li>
-          <Link href="/about">About</Link>
+          <Link href="/about" className={pathname == "/about" ? `${styles.linkActive}` : ""}>
+            About
+          </Link>
         </li>
         <li>
-          <Link href="/work">Work & Projects</Link>
+          <Link href="/work" className={pathname == "/work" ? `${styles.linkActive}` : ""}>
+            Work & Projects
+          </Link>
         </li>
       </ul>
       <div className={`${styles.contact}`}>

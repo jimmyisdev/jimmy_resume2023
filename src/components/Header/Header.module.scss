@@ -2,10 +2,16 @@
   height: 50px;
   padding: 1rem;
   justify-content: space-between;
+
   .contact {
     height: 100%;
   }
+
   li {
     margin: 0.5rem;
   }
+}
+
+.linkActive {
+  font-weight: 900;
 }

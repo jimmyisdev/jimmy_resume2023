@@ -43,6 +43,11 @@
   color: white;
   background-color: black;
 
+  button {
+    color: white;
+
+  }
+
   ul li a {
     color: white;
   }
@@ -51,6 +56,11 @@
 .light {
   color: black;
   background-color: white;
+
+  button {
+    color: black;
+
+  }
 
   ul li a {
     color: black;
@@ -78,36 +88,4 @@
     }
   }
 
-}
-
-.link_item_style {
-  justify-content: space-around;
-  margin-bottom: .5rem;
-
-}
-
-.tool_container_item_style {
-  justify-content: space-between;
-  align-items: start;
-  flex-wrap: wrap;
-  margin-bottom: .5rem;
-
-  .tool_item {
-    margin: .25rem;
-    font-weight: 500;
-    padding: .5rem;
-
-    &:hover {
-      border-bottom: 3px solid red;
-      font-weight: 800;
-    }
-  }
-}
-
-.list_container {
-  align-items: flex-start;
-
-  .list_item {
-    margin: .5rem;
-  }
 }
