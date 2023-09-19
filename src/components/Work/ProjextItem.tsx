@@ -14,11 +14,9 @@ export default function ProjextItem({ data }: { data: projectItemType }) {
     }
 
     return (
-        <div className='project_item'>
-            <div className='head flex_column'>
-                <h1>{name}</h1>
-                <button onClick={handleProjectItemModal}>Details</button>
-            </div>
+        <div className='project_item flex_column'>
+            <h1>{name}</h1>
+            <button onClick={handleProjectItemModal}>Details</button>
         </div>
     )
 }

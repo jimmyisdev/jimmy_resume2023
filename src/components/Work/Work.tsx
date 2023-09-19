@@ -52,7 +52,7 @@ const Work = () => {
           })}
         </div>
       </section>
-      <section className={`sect`}>
+      <section className={`${styles.content_container}`}>
         <h1 className={`sect_title`}>Side Projects</h1>
         <div className="big_container flex_row">
           {!!projectData.length && projectData.map(item => {
