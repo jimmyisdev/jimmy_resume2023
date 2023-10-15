@@ -4,7 +4,7 @@ import { ListContainer } from "./ListContainer"
 import { ToolContainer } from "./ToolContainer"
 
 export const ProjectModalContent = ({ data }: { data: projectItemType }) => {
-    const { name, tools, url, description, tasks } = data
+    const { name, tools, url, description, tasks, videoUrl } = data
 
     return (
         <div className="flex_column">
@@ -36,7 +36,7 @@ export const ProjectModalContent = ({ data }: { data: projectItemType }) => {
                     <br />
                 </>
             }
-            {<LinkItem data={data?.repos} link={url} />}
+            {<LinkItem data={data?.repos} link={url} videoUrl={videoUrl} />}
         </div>
     )
 }

@@ -1,14 +1,19 @@
 import styles from "./Shared.module.scss";
 import { reposType } from "@component/interface/interface"
-import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub, FaYoutube } from "react-icons/fa";
 
-export const LinkItem = ({ data, link = '' }: { data: reposType, link: string }) => {
+export const LinkItem = ({ data, link = '', videoUrl = '' }: { data: reposType, link: string, videoUrl?: string }) => {
     const { frontend = "", backend = "" } = data
     return (
         <div className={`flex flex_row ${styles.link_item_style}`}>
             {!!link.length && (
                 <a href={link}>
                     <FaExternalLinkAlt size={30} />
+                </a>
+            )}
+            {!!videoUrl.length && (
+                <a href={videoUrl}>
+                    <FaYoutube size={30} />
                 </a>
             )}
             {!!frontend.length && (

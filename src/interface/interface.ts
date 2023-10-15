@@ -10,6 +10,7 @@ export type projectItemType = {
   tasks: string[];
   url: string;
   repos: reposType;
+  videoUrl?: string;
 }
 
 export type workItemType = {
