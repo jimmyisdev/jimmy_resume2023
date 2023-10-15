@@ -116,6 +116,7 @@ export const projectData = [
   {
     name: "Sake Sake 2023",
     url: "https://sake-sake2023.vercel.app/",
+    videoUrl: 'https://youtu.be/p-Cutwb0RvA',
     description: [
       "- Search desired drink based on Cocktail Api",
       "- Make order and calculate the bill."
@@ -135,6 +136,7 @@ export const projectData = [
   {
     name: "Dailygram (Full stack)",
     url: "https://dailygram2023.onrender.com/",
+    videoUrl: 'https://youtu.be/rSoy_9ScV8Q',
     description: [
       '- Authentication/ Authorization : signin/ login, JWT token, Encrypt password before storing in mongoDB',
       '- Fetch 3rd party API : get cat picture',
