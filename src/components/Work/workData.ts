@@ -89,7 +89,7 @@ export const projectData = [
   {
     name: "Memodown (Full stack)",
     url: "https://memodown.vercel.app/",
-    videoUrl: 'https://youtu.be/Lz_jyg91-GE',
+    videoUrl: 'https://youtu.be/Lz_jyg91-GE?si=VMl-N4A1zsKVnfNy',
     description: [
       '- An app which can add note or idea and share with your friend conveniently.',
       "- Authorization : signup, login/ logout, change password",
@@ -116,7 +116,7 @@ export const projectData = [
   {
     name: "Sake Sake 2023",
     url: "https://sake-sake2023.vercel.app/",
-    videoUrl: 'https://youtu.be/p-Cutwb0RvA',
+    videoUrl: 'https://youtu.be/p-Cutwb0RvA?si=WW4-bg1LP0F3mWdu',
     description: [
       "- Search desired drink based on Cocktail Api",
       "- Make order and calculate the bill."
@@ -136,7 +136,7 @@ export const projectData = [
   {
     name: "Dailygram (Full stack)",
     url: "https://dailygram2023.onrender.com/",
-    videoUrl: 'https://youtu.be/rSoy_9ScV8Q',
+    videoUrl: 'https://www.youtube.com/watch?v=rSoy_9ScV8Q',
     description: [
       '- Authentication/ Authorization : signin/ login, JWT token, Encrypt password before storing in mongoDB',
       '- Fetch 3rd party API : get cat picture',
