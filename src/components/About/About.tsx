@@ -1,12 +1,15 @@
+import { useState } from "react";
 import styles from "./About.module.scss";
-import { educationData, introText, proficiencyData } from "./aboutData";
+import { educationData, introText, introTextJP, proficiencyData } from "./aboutData";
 
 const About = () => {
+  const [showJP, setShowJP] = useState(false)
+  const currentData = showJP ? introTextJP : introText
   return (
     <div className={`page ${styles.about}`}>
       <section className={`sect ${styles.about_text}`}>
         <h1 className={`sect_title`}>About me</h1>
-        {introText.map(item => {
+        {currentData.map(item => {
           return <>
             <p>
               {item}
@@ -14,6 +17,9 @@ const About = () => {
             <br />
           </>
         })}
+        <div className="flex_column">
+          <button onClick={() => setShowJP(!showJP)}>{showJP ? "English" : "日本語"}</button>
+        </div>
       </section>
       <section className={`sect`}>
         <h1 className={`sect_title`}>Education</h1>
