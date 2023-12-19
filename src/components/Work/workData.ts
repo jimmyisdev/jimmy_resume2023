@@ -114,6 +114,29 @@ export const projectData = [
 
   },
   {
+    name: "JVERSE(Web3)",
+    url: "https://jverse-2023.vercel.app/",
+    description: [
+      ""
+
+    ],
+    repos: {
+      frontend: "https://github.com/jimmyisdev/jc_web3_2023",
+    },
+    tools: [
+      "Next13",
+      "TypeScript",
+      "Tailwind",
+      "EthersJS",
+      'Binance API',
+      'MetaMask',
+      "Context API",
+      "Vercel",
+    ],
+    tasks: [],
+
+  },
+  {
     name: "Sake Sake 2023",
     url: "https://sake-sake2023.vercel.app/",
     videoUrl: 'https://youtu.be/p-Cutwb0RvA?si=WW4-bg1LP0F3mWdu',

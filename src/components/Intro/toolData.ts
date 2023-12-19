@@ -23,6 +23,15 @@ export const toolsData = [
   "Netlify",
 ];
 
+export const techData = {
+  "frontend": [],
+  "backend": [],
+  "block chain": []
+
+
+}
+
+
 export const featuresData = [
   "Self-taught",
   "Write clean code",
