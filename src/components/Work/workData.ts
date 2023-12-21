@@ -116,6 +116,7 @@ export const projectData = [
   {
     name: "JVERSE(Web3)",
     url: "https://jverse-2023.vercel.app/",
+    videoUrl: 'https://youtu.be/XG-HqMivaKQ',
     description: [
       ""
 
