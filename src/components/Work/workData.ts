@@ -118,7 +118,8 @@ export const projectData = [
     url: "https://jverse-2023.vercel.app/",
     videoUrl: 'https://youtu.be/XG-HqMivaKQ',
     description: [
-      ""
+      "- Connect MetaMask to show user's ether balance and ERC20 token on different Ethereum.",
+      "- Deploy a basic ERC Token to Sepolia testnet and distribute it on request."
 
     ],
     repos: {
