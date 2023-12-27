@@ -116,10 +116,11 @@ export const projectData = [
   {
     name: "JVERSE(Web3)",
     url: "https://jverse-2023.vercel.app/",
-    videoUrl: 'https://youtu.be/XG-HqMivaKQ',
+    videoUrl: 'https://youtu.be/Qc-WDBbI1Ps',
     description: [
       "- Connect MetaMask to show user's ether balance and ERC20 token on different Ethereum.",
-      "- Deploy a basic ERC Token to Sepolia testnet and distribute it on request."
+      "- Deploy a basic ERC Token to Sepolia testnet and distribute it on request.",
+      "- Transfer coin or token to other address."
 
     ],
     repos: {
