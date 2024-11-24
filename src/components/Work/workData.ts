@@ -82,6 +82,41 @@ export const workInfoData = [
 
     ]
 
+  },
+  {
+    period: "March 2024 - Now",
+    company: "PlusBlocks Technology",
+    title: "Frontend Developer",
+    tasks: [
+      // 'Debugging : Identify and resolve issues in the existing projects',
+      // 'UI/UX Improvement : Collaborate with designer and PM to enhance the visual appeal and usability of our projects, ensuring an exceptional user experience.',
+      // "New Feature Development: Take part in the creation and implementatio of new features.",
+      // "Rebuilding an Internal System : Utilize mock data to rebuild an existing internal system."
+    ],
+    projects: [
+      {
+        name: "boxtradex",
+        description: [
+          // "A platform utilized for facilitating a significant volume of cryptocurrency trading.",
+        ],
+        url: "",
+        tasks: [],
+        tools: [
+          "React.js (CRA)",
+          "Typescript",
+          "SASS",
+          "Redux",
+          "EthersJS",
+        ],
+        repos: {
+          frontend: "",
+          backend: "",
+        },
+      },
+
+
+    ]
+
   }
 ]
 
