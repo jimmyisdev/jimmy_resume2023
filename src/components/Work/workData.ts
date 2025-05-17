@@ -88,16 +88,16 @@ export const workInfoData = [
     company: "PlusBlocks Technology",
     title: "Frontend Developer",
     tasks: [
-      // 'Debugging : Identify and resolve issues in the existing projects',
-      // 'UI/UX Improvement : Collaborate with designer and PM to enhance the visual appeal and usability of our projects, ensuring an exceptional user experience.',
-      // "New Feature Development: Take part in the creation and implementatio of new features.",
-      // "Rebuilding an Internal System : Utilize mock data to rebuild an existing internal system."
+      'Integrated third-party login systems (X, TikTok)',
+      'Redesigned the UI of the comment board and discussion forum',
+      'Developed features for on-chain interactive activities',
+      'Implemented ERC-20 token creation and token swap functionalities'
     ],
     projects: [
       {
         name: "boxtradex",
         description: [
-          // "A platform utilized for facilitating a significant volume of cryptocurrency trading.",
+          "A Web3 platform delivering services across a multi-blockchain ecosystem.",
         ],
         url: "",
         tasks: [],

@@ -21,6 +21,7 @@ export const toolsData = [
   "Github",
   "Render",
   "Netlify",
+  "EthersJS"
 ];
 
 export const techData = {
