@@ -6,8 +6,10 @@ export const introText = [
   'Overall, I’m enthusiastic about the opportunities in web development and always eager to take on new challenges to grow my skills and contribute to meaningful projects.'
 ]
 export const introTextJP = [
-  "はじめまして、私はチェンといいます。台北出身のWeb開発者です。大学を卒業後、ドイツに渡り、ハイデルベルク大学で大学院に進学しました。大学院2年目の時、1年間の交換留学で京都大学に滞在しました。その後、独学でプログラミングを習得しました。",
-  "前職では台北のFin-tech会社でフロントエンド開発者として勤務しました。仕事内容は、既存のプラットフォームの保守、バグの修正、新機能の開発でした。さらに、Express.js、MongoDB、Next.jsを使用して、フルスタックプロジェクトを構築する経験も積みました。現在は、Web 3 関連の知識も習得中で、ブロックチェーンの概念、Ethereumシステム、およびSolidityの基本的なsyntaxについて理解を深めています。"
+  'こんにちは！私はチェンといいます。台北出身のWeb開発者です。',
+  '私は大学を卒業後、ドイツに渡り、ハイデルベルク大学で大学院に進学しました。大学院2年目の時、1年間の交換留学で京都大学に滞在しました。その後、独学でプログラミングを習得しました。',
+  '私のキャリアは、台北のフィンテック企業でフロントエンド開発者としてスタートしました。そこで、既存のプラットフォームの維持、バグの修正、新機能の実装を行い、React.js を使用して開発に携わりました。その後、Web3 スタートアップに入社し、React ベースのプラットフォームの開発とメンテナンスを続けました。この期間に、Ethereumエコシステムとブロックチェーン技術を活用したサービスの開発に実践的な経験を積みました。',
+  '職業経験に加えて、Express.js、MongoDB、Next.jsなどの技術を使用して、いくつかのフルスタックプロジェクトを構築しました。また、現在は Python のスキルを広げるために学習を進めています。',
 ]
 
 export const educationData = [
