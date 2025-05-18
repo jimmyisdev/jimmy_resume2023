@@ -15,12 +15,11 @@ const Work = () => {
             const { period = '', company = '', title = '', tasks = [], projects = [] } = item
             return <div key={item.company} className={`flex_column ${styles.work_item_container}`}>
               {<div className={`flex_row ${styles.content_container}`}>
-                <div className={`${styles.title}`}><span>{`Period`}</span></div>
-                <div className={`${styles.content}`}><span>{period}</span></div>
+                <div className={`${styles.content}`}><h1>{company}</h1></div>
               </div>}
               {<div className={`flex_row ${styles.content_container}`}>
-                <div className={`${styles.title}`}><span>{`Company`}</span></div>
-                <div className={`${styles.content}`}><span>{company}</span></div>
+                <div className={`${styles.title}`}><span>{`Period`}</span></div>
+                <div className={`${styles.content}`}><span>{period}</span></div>
               </div>}
               {<div className={`flex_row ${styles.content_container}`}>
                 <div className={`${styles.title}`}><span >{`Title`}</span></div>
