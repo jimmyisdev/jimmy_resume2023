@@ -1,3 +1,10 @@
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .main_img {
   background-color: black;
   width: 150px;
@@ -5,14 +12,32 @@
   clip-path: circle(50% at 50% 50%);
   margin: 2rem;
 }
+
+.actionContainer {
+  display: flex;
+  gap: 1.5rem;
+
+  button {
+    height: 1.5rem;
+    width: 1.5rem;
+
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
 .feature_container {
   li {
     margin-bottom: 1rem;
   }
+
   h3 {
     margin-left: 0.5rem;
   }
 }
+
 .tool_container {
   justify-content: center;
 }

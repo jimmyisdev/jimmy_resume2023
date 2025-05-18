@@ -11,7 +11,7 @@ const Work = () => {
       <section className={`sect`}>
         <h1 className={`sect_title`}>Working Experience</h1>
         <div className="big_container flex_row">
-          {!!workInfoData.length && workInfoData.map((item: workItemType) => {
+          {!!workInfoData.length && [...workInfoData].reverse().map((item: workItemType) => {
             const { period = '', company = '', title = '', tasks = [], projects = [] } = item
             return <div key={item.company} className={`flex_column ${styles.work_item_container}`}>
               {<div className={`flex_row ${styles.content_container}`}>
