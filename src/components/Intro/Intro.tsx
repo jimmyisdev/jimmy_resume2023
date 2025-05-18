@@ -67,7 +67,7 @@ const Intro = () => {
             </button>
           </div>
         </div>
-        <ul className={`flex_column ${styles.feature_container}`}>
+        <ul className={`flex_col items-start ${styles.feature_container}`}>
           <div className={`flex_column ${styles.intro_phrase}`}>
             <h1 className={`sect_title`}>
               Hi! I am Jimmy, a frontend web developer!
